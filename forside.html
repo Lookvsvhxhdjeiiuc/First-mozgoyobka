@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="js/cart.js"></script>
+  <script src="js/cart-dialog.js"></script>
+  <script src="js/index.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/38ec7063c9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=BBH+Bogle&family=Bentham&family=Bitcount+Grid+Double:wght@100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Buenard:wght@400..700&family=Copse&family=Fredericka+the+Great&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Kalnia+Glaze:wght@100..700&family=Kumar+One&family=Nosifer&family=Playwrite+CU+Guides&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Square+Peg&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <title>Legekrogen</title>
+</head>
+
+<body>
+  <header>
+    <section class="delivery">
+      <i class="fa-solid fa-truck"></i>
+      <h3>&nbsp; Fri fragt ved køb over 499,-</h3>
+    </section>
+    <section class="base_headder">
+      <a href="/forside.html"><img src="/assets/logo/legekrogen_logo.png" alt="Legekrogen Logo" /></a>
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <a href="/index.html">Produkter</a>
+          </li>
+          <li>
+            <a href="/questions.html">FAQ</a>
+          </li>
+          <li>
+            <a href="/beWithUs.html">Kundeklubben</a>
+          </li>
+          <li class="cart-nav-item">
+            <a href="#" class="cart-trigger cart-nav-link">Kurv<span class="cart-count">0</span></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-controls">
+        <button type="button" class="cart-icon cart-trigger" aria-label="Kurv">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="burger-menu" aria-label="Åbn menu" type="button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </section>
+  </header>
+  <dialog class="cart-dialog">
+    <p class="cart-dialog-empty">Der er ingen varer i kurven.</p>
+    <div class="cart-dialog-list"></div>
+    <div class="cart-dialog-total">
+      <p>I alt</p>
+      <p class="cart-dialog-total-price">0 kr</p>
+    </div>
+  </dialog>
+  <main>
+    <div class="photo_forside">
+      <div class="case">
+        <p class="mega">At lege er at leve</p>
+        <p class="small"> Her hos os har vi et stort udvalg af legetøj i høj kvalitet</p>
+      </div>
+    </div>
+<div class="main_container">
+      <div class="txt">
+        <p class="prod">Et udpluk af vores</p>
+        <h1>LEGETØJ</h1>
+      </div>
+    <div class="data-list-container_forside"></div>
+    </div>
+    <div class="main_container_forside">
+      <div class="txt">
+        <p class="prod">Vores kunder</p>
+        <h1>UDTALER</h1>
+      </div>
+    <div class="review-customers-container"></div></div>
+    <section class="last">
+      <p>Kunne du også tænke dig at blive
+        medlem af vores </p>
+      <h3>Kundeklub?</h3>
+      <a href="/beWithUs.html"><button>Bliv mellem nu</button></a>
+    </section>
+  </main>
+  <footer>
+    <p class="kundeservice">Kundeservice</p>
+    <div class="contact"><i class="fa-regular fa-envelope"></i>&nbsp;kontakt@legehjernet.dk</div>
+    <div class="phone"><i class="fa-solid fa-phone"></i>&nbsp;+45 2545 67 89</div>
+    <p class="find_us">Følg os</p>
+    <div class="social">
+     
+      <img src="/assets/icons/icons8-facebook-24.svg" alt="Facebook">
+      <img src="/assets/icons/icons8-instagram-24.svg" alt="Instagram">
+    </div>
+  </footer>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

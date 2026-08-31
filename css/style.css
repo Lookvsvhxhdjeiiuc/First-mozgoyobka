@@ -1,0 +1,865 @@
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.square-peg-regular {
+  font-family: "Square Peg", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.base_headder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.base_headder img {
+  width: 150px;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-family: "Quicksand";
+}
+
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #9478A7;
+  color: white;
+  font-family: "Quicksand";
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.cart-nav-item {
+  display: none;
+}
+
+.cart-nav-link {
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+}
+
+.cart-nav-link .cart-count {
+  position: static;
+}
+
+@media (min-width: 768px) {
+  .header-controls {
+    display: none;
+  }
+
+  .cart-nav-item {
+    display: block;
+  }
+}
+
+.burger-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+
+  .burger-menu {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+.base_headder {
+  background-color: #355674;
+}
+
+.social {
+  background-color: #355674;
+}
+
+.delivery {
+  display: flex;
+  background-color: #D7E6EC;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  height: 28px;
+}
+
+.photo {
+  background-image: url(/assets/heros/produkter.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 722px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.case {
+  background-color: #C1ADCE95;
+  width: 100%;
+  color: white;
+  height: 250px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.litle {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Square Peg";
+}
+
+.big {
+  font-size: 45px;
+  text-align: center;
+  font-family: "Quicksand";
+}
+
+.main_container {
+  background-color: #C1ADCE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.data-list-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.prod {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Square Peg";
+  color: white;
+}
+
+h1 {
+  font-size: 65px;
+  text-align: center;
+  font-family: "Quicksand";
+  font-weight: 400;
+  color: white;
+}
+
+.txt {
+  padding: 120px 0px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 325px;
+    height: 295px;
+    border-radius: 16px 16px 0px 0px;
+  }
+
+  .tekst {
+    background-color: #9478A7;
+    border-radius: 0px 0px 16px 16px;
+  }
+
+  p {
+    padding: 0 0 0 22px;
+    color: white;
+    font-family: "Quicksand"
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .description {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .price {
+    font-size: 26px;
+  }
+
+  .add-to-cart-btn {
+    display: block;
+    width: calc(100% - 44px);
+    margin: 15px 22px 22px;
+    height: 45px;
+    border-radius: 23px;
+    border: none;
+    background-color: #355674;
+    color: white;
+    font-family: "Quicksand";
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .add-to-cart-btn:hover {
+    background-color: #2a4459;
+  }
+
+  .discount {
+    background-color: #D7E6EC;
+    border-radius: 50%;
+    position: absolute;
+    height: 105px;
+    width: 105px;
+    font-family: "Square Peg";
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    align-self: end;
+    color: #355674;
+    margin: 16px 10px 0 0;
+  }
+}
+
+.data-list-container_forside {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.small {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Quicksand";
+}
+
+.mega {
+  font-size: 65px;
+  text-align: center;
+  font-family: "Square Peg";
+}
+
+.photo_forside {
+  background-image: url(/assets/heros/forsiden.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 722px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.main_container_forside {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+
+  h1 {
+    color: #355674;
+  }
+
+  p {
+    color: #355674;
+  }
+}
+
+.descriptions {
+  font-size: 28px;
+  font-family: "Quicksand";
+  text-align: center;
+  width: 800px;
+}
+
+.name {
+  color: #9478A7 !important;
+  font-family: "Square Peg";
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.last {
+  background-color: #D7E6EC;
+  padding: 60px 0 80px 0;
+
+  p {
+    color: #355674;
+    font-family: "Quicksand";
+    text-align: center;
+    font-size: 24px;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: "Square Peg";
+    font-size: 65px;
+    color: #355674;
+    font-weight: 300;
+  }
+
+  button {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    width: 452px;
+    height: 68px;
+    border-radius: 40px;
+    background-color: #355674;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-family: "Quicksand";
+    margin-top: 40px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+footer {
+  background-color: #355674;
+  padding-top: 60px;
+}
+
+.kundeservice {
+  text-align: center;
+  font-family: "Square Peg";
+  font-size: 55px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact {
+  color: white;
+  text-align: center;
+  font-family: "Quicksand";
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.phone {
+  color: white;
+  text-align: center;
+  font-family: "Quicksand";
+  font-size: 24px;
+  font-weight: 300;
+  padding-top: 15px;
+}
+
+.find_us {
+  text-align: center;
+  font-family: "Square Peg";
+  font-size: 55px;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.social {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.photo3 {
+  background-image: url(/assets/heros/FAQ.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 722px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.txt3 {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  font-size: 24px;
+  font-family: "Quicksand";
+  color: white;
+  width: 450px;
+  text-align: center;
+}
+
+.accordion {
+  border: 1px solid #BCBCBC;
+  border-radius: 16px;
+  background-color: white;
+
+  width: 80%;
+  margin: 10px auto;
+
+  color: #355674;
+  font-size: 18px;
+
+  font-family: "Quicksand", sans-serif;
+}
+
+.accordion details {
+  width: 100%;
+}
+
+.accordion summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+
+  background-color: white;
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+  color: #355674;
+
+  list-style: none;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion p {
+  padding: 0 20px 20px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.accordion summary i {
+  transition: transform 0.3s ease;
+  color: #9478A7;
+}
+
+.accordion details[open] summary i {
+  transform: rotate(180deg);
+}
+
+.accordion li {
+  list-style: none;
+  padding: 0px 20px 20px;
+}
+
+.accordion span {
+  margin: 30px 0 30px 0;
+  font-weight: 400;
+}
+
+.accordion li::before {
+  content: "- ";
+}
+
+.accordion details[open] summary {
+  position: relative;
+}
+
+.accordion details[open] summary::after {
+  content: "";
+  display: block;
+  position: absolute;
+
+  left: 20px;
+  right: 20px;
+  bottom: 30px;
+
+  height: 1px;
+  background: #BCBCBC;
+}
+
+.photo4 {
+  background-image: url(/assets/heros/medlem.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 722px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+input {
+  width: 306px;
+  height: 45px;
+  border-radius: 28px;
+  font-family: "Square Peg";
+  font-weight: 300;
+  font-size: 24px;
+  border-color: #BCBCBC;
+  border: 1px solid;
+  margin: 10px;
+  padding: 20px;
+}
+
+textarea {
+  width: 306px;
+  height: 180px;
+  border-radius: 28px;
+  font-family: "Square Peg";
+  font-weight: 300;
+  font-size: 24px;
+  border-color: #BCBCBC;
+  border: 1px solid;
+  margin: 10px;
+  padding: 20px;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.send-btn {
+  background-color: #9478A7;
+  width: 300px;
+  height: 45px;
+  border-radius: 23px;
+  border: 1px solid #355674;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@media (max-width:1024px) {
+  .descriptions {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .data-list-container {
+    gap: 20px 0px;
+  }
+}
+
+@media (max-width:768px) {
+  .data-list-container_forside {
+    grid-template-columns: 1fr;
+  }
+
+  .last {
+    button {
+      width: 300px;
+      height: 45px;
+      font-size: 18px;
+    }
+  }
+
+  .data-list-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .accordion {
+    width: 90%;
+  }
+
+  .accordion summary {
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion summary {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .txt3 {
+    width: 90%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .txt3 {
+    width: 100%;
+    font-size: 18px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .photo,
+  .photo_forside,
+  .photo3,
+  .photo4 {
+    height: 720px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .photo,
+  .photo_forside,
+  .photo3,
+  .photo4 {
+    height: 720px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.thank-you-dialog {
+border: none;
+background-color: #02020200;
+ display: none;
+  align-self: center;
+  justify-self: center;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+  }
+  p{
+    color: white;
+    font-size: 18px;
+    font-family: "Quicksand";
+    text-align: center;
+    width: 294px;
+  }
+}
+.thank-you-dialog[open]{
+  display: flex;
+}
+
+.thank-you-dialog::backdrop {
+  background: #9478A7E5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn {
+  background-color: #355674;
+  width: 300px;
+  height: 45px;
+  border-radius: 23px;
+  border: 1px solid #355674;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 50px;
+}
+h2{
+  font-family: "Square Peg";
+  font-size: 65px;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+}
+
+.cart-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  border: none;
+  border-radius: 0;
+  padding: 30px 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12);
+}
+
+.cart-dialog::backdrop {
+  background: #35567499;
+}
+
+.cart-dialog-empty {
+  display: none;
+  text-align: center;
+  font-family: "Quicksand";
+  font-size: 16px;
+  color: #355674;
+  padding: 20px 0;
+}
+
+.cart-dialog-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #BCBCBC;
+}
+
+.cart-dialog-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 1px solid #BCBCBC;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.cart-dialog-info {
+  flex: 1;
+}
+
+.cart-dialog-brand {
+  font-family: "Quicksand";
+  font-size: 14px;
+  font-weight: 500;
+  color: #355674;
+}
+
+.cart-dialog-name {
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 600;
+  color: #355674;
+}
+
+.cart-dialog-price {
+  font-family: "Quicksand";
+  font-size: 24px;
+  color: #355674;
+  white-space: nowrap;
+}
+
+.cart-dialog-remove {
+  background: none;
+  border: none;
+  color: #BCBCBC;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.cart-dialog-remove:hover {
+  color: #9478A7;
+}
+
+.cart-dialog-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  font-family: "Quicksand";
+  font-size: 24px;
+  font-weight: 700;
+  color: #355674;
+}
+
+@media (max-width: 767px) {
+  .cart-dialog {
+    padding: 20px;
+  }
+}
